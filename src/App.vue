@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-
+  <Checkers />
+<!--    <img alt="Vue logo" class = "desk" src="./assets/desk.jpg">-->
   </div>
 </template>
 
 <script>
 
-
+import Checkers from '@/components/checkers.vue'
 export default {
   name: 'App',
+  data(){
+    return{
+      arr: []
+    }
+  },
   components: {
-
+    Checkers
   }
 }
 </script>
@@ -24,4 +30,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
